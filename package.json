@@ -1,0 +1,27 @@
+{
+  "name": "@cotowali/eslint-config",
+  "version": "0.1.0",
+  "description": "Shared eslint config for cotowali",
+  "author": "zakuro <z@kuro.red>",
+  "keywords": ["eslint", "eslintconfig"],
+  "files": ["javascript.js"],
+  "license": "Apach-2.0",
+  "scripts": {
+    "test-js": "eslint -c javascript.js --ignore-path .gitignore --ext .js .",
+    "test": "pnpm run test-js"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}
