@@ -18,18 +18,19 @@
     "test-ts": "eslint -c typescript.js --ignore-path .gitignore --ext .js,.ts .",
     "test": "pnpm run test-js && pnpm run test-ts"
   },
+  "dependencies": {
+    "eslint-config-standard": "^17.0.0"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0",
     "eslint": "^8.34.0",
-    "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1"
   },
   "peerDependencies": {
     "eslint": "^8.34.0",
-    "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1"
