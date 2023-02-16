@@ -3,14 +3,23 @@
   "version": "0.1.0",
   "description": "Shared eslint config for cotowali",
   "author": "zakuro <z@kuro.red>",
-  "keywords": ["eslint", "eslintconfig"],
-  "files": ["javascript.js"],
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "files": [
+    "javascript.js",
+    "typescript.js"
+  ],
   "license": "Apach-2.0",
   "scripts": {
     "test-js": "eslint -c javascript.js --ignore-path .gitignore --ext .js .",
-    "test": "pnpm run test-js"
+    "test-ts": "eslint -c typescript.js --ignore-path .gitignore --ext .js,.ts .",
+    "test": "pnpm run test-js && pnpm run test-ts"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
     "eslint": "^8.34.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.27.5",
